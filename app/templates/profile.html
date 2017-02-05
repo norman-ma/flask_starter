@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block css %} 
+<link href="/static/css/mystyles.css" rel="stylesheet">
+{% endblock %}
+{% block main %}
+<h1 class="page-header">Profile</h1>
+<img src="{{url_for('static',filename='luigi.png')}}"/>
+<div id='info'>
+    <div id = 'name'>  
+        <h3>Luigi Mario</h3>
+    </div>
+    <div>
+        <div id='today'>
+            Today's date is {{ today }}
+        </div>
+        <div id = 'userinfo'>
+            <span>Username:</span> ImaLuigi<br/>
+            <span>ID Number:</span> 620076834<br/>
+            <span>Age:</span> 34<br/>
+            <span>Gender:</span> Male
+        </div>
+        <div id = 'bio'>
+            I am Mario's superior, yet often forgotten, younger brother.  
+        </div>    
+    </div>
+</div>
+{% endblock %}
